@@ -14,7 +14,7 @@ form.addEventListener('submit',(e)=>{
     }else if(screenWidth < 600 && lift > 2){
         alert("This screen size cant have more than 2 lifts");
     }else{
-        const url = `floorsLifts.html?floor=${encodeURIComponent(floor)}&lift=${encodeURIComponent(lift)}`;
+        const url = `./html/floorsLifts.html?floor=${encodeURIComponent(floor)}&lift=${encodeURIComponent(lift)}`;
         window.location.href = url;
     }   
 })
