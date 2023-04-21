@@ -7,6 +7,7 @@
     position: relative;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;  
     background: #000;
@@ -19,7 +20,6 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    /* border: 10px solid rgba(0,0,0,.7); */
     border-radius: 15px;
     box-shadow: inset 5px 5px 20px rgba(0,0,0,1), 10px 10px 35px rgba(255,255,255,.4);
 }
