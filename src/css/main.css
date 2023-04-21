@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index-conatiner{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: #000;
+}
+.form-container{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* border: 10px solid rgba(0,0,0,.7); */
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 20px rgba(0,0,0,1), 10px 10px 35px rgba(255,255,255,.4);
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 40px 0 20px;
+}
+.inputBox input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    
+}
+.inputBox .text{
+    position: absolute;
+    top: 0;
+    left:0;
+    line-height: 40px;
+    padding: 0 10px;
+    display: block;
+    transition: .5s;
+    pointer-events: none;
+}
+.inputBox input:focus ~ .text,
+.inputBox input:valid ~ .text{
+    top: -35px;
+    left: -8px;
+}
+.inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: .5s;
+    border-radius: 5px;
+}
+.liftSimulation{
+    position: relative;
+    bottom: -20px;
+    padding: 10px 0px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-weight: bolder;
+    border: 2px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .5s;
+}
+.liftSimulation:hover{
+    background: #fff;
+    color: #000;
+}

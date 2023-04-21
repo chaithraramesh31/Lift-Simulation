@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="index-conatiner">
+        <form class="form-container">
+            <div class="inputBox">
+                <input type="text" name="floor" id="floor" required>
+                <span class="text">Enter no of floors : </span>
+                <span class="line"></span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="lift" id="lift" required min="1">
+                <span class="text">Enter no of lifts : </span>
+                <span class="line"></span>
+            </div>
+            <button type="submit" class="liftSimulation">Lift Simulation</button>
+        </form>
+        <script src="./js/main.js"></script>
+    </div>
+</body>
+</html>

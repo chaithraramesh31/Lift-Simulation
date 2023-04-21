@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer-container{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #000;
+}
+.floorslifts-container{
+    width: 95%;
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+    transition: .5s;
+}
+.floor-container{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255);
+    display: flex;
+    margin: 10px 0px;
+    border-radius: 10px;
+    box-shadow: inset 0px 5px 10px rgba(0,0,0,.7);
+}
+.text-btn{
+    min-width: 70px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.floor-container p{
+    font-weight: bold;
+    margin: 0px;
+}
+.floor-container .upBtn,
+.floor-container .downBtn{
+    cursor: pointer;
+    margin-top: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+.floor-line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 98%;
+    height: 3px;
+    left: 10px;
+    background: #fff;
+    transition: .5s;
+    border-radius: 5px;
+}
+.lifts-container{
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    width: calc(100% - 70px);
+    height: 70%;
+    display: flex;
+}
+.lifts{
+    width: 5%;
+    height: 95%;
+    position: relative;
+    margin-left: 40px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.left-door{
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    background: grey;
+    border: 1.5px solid #000; 
+}
+.left-door.door-operation{
+    animation: left 3s 1 ease-in-out;
+}
+@keyframes left{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: -52%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.right-door{
+    position: absolute;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    background: grey;
+    border: 1.5px solid #000;
+}
+.right-door.door-operation{
+    animation: right 3s 1 ease-in-out;
+}
+@keyframes right{
+    0%{
+        right: 0;
+    }
+    50%{
+        right: -52%;
+    }
+    100%{
+        right: 0;
+    }
+}
+.outer-container a{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.7);
+}
